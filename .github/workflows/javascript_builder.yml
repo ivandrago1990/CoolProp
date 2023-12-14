@@ -1,4 +1,4 @@
-name: Javascript library
+name: javascript_library
 
 on:
   push:
