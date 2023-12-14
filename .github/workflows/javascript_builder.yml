@@ -1,6 +1,12 @@
 name: Javascript library
 
 on:
+  workflow_dispatch:
+    inputs:
+      parameter_name:
+        description: 'Target environment for the deployment'
+        required: true
+        default: 'production'
   push:
     branches: [ 'master', 'main', 'develop', 'actions_javascript' ]
     tags: [ 'v*' ]
